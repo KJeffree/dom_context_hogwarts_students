@@ -1,0 +1,65 @@
+body {
+  background-image: url(../images/parchment.jpg);
+  font-family: Acme;
+  margin: 30px;
+}
+
+label {
+  margin: 5px;
+}
+
+#single-button {
+  margin-bottom: 10px;
+}
+
+#new-student-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-item {
+  margin: 10px;
+}
+
+/* .checklist {
+  display: flex;
+  flex-direction: column;
+} */
+
+#student-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#student-list-item {
+  width: 25%;
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+
+}
+
+.gryffindor {
+  background-color: #7F0909;
+  color: #FFC500;
+}
+
+.ravenclaw {
+  background-color: #000A90;
+  color: #B07F36
+}
+
+.slytherin {
+  background-color: #0D6217;
+  color: #AAAAAA
+}
+
+.hufflepuff {
+  background-color: #EEE117;
+  color: #000000
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hogwarts Students App</title>
+    <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <form id="new-student-form">
+      <h1>Hogwarts Students</h1>
+      <div class="form-item">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" required/>
+      </div>
+      <div class="form-item">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last_name" required/>
+      </div>
+      <div class="form-item">
+        <input type="radio" id="Gryffindor" name="house" value="Gryffindor"/>
+        <label for="Gryffindor">Gryffindor</label>
+
+        <input type="radio" id="Ravenclaw" name="house" value="Ravenclaw" />
+        <label for="Ravenclaw">Ravenclaw</label>
+
+        <input type="radio" id="Slytherin" name="house" value="Slytherin" />
+        <label for="Slytherin">Slytherin</label>
+
+        <input type="radio" id="Hufflepuff" name="house" value="Hufflepuff" />
+        <label for="Hufflepuff">Hufflepuff</label>
+      </div>
+      <div class="form-item">
+        <label for="pet">Student's Pet</label>
+        <select id="pet">
+          <option value="" disabled selected></option>
+          <option value="Cat">Cat</option>
+          <option value="Owl">Owl</option>
+          <option value="Toad">Toad</option>
+          <option value="Rat">Rat</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="birthday-field">Enter Student's Birthday</label>
+        <input type="date" name="bday" min="1978-07-31" max="1985-07-31" id="birthday-field">
+      </div>
+      <div class="form-item checklist">
+        <label for="items">List of Items Student Has Bought</label>
+        <br>
+        <input id="items" type="checkbox" name="items" value="Wand">Wand
+        <br>
+        <input id="items" type="checkbox" name="items" value="Cauldron">Cauldron
+        <br>
+        <input id="items" type="checkbox" name="items" value="Robes">Robes
+        <br>
+        <input id="items" type="checkbox" name="items" value="Text Books">Text Books
+        <br>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+    <h2>Students:</h2>
+    <div id="student-list"></div>
+    <button type="button" id="button">Delete All</button>
+  </body>
+</html>
