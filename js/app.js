@@ -30,8 +30,15 @@ const handleFormSubmit = function (event) {
       checkedValue.push(inputElements[i].value);
     }
   }
+  console.log(checkedValue);
+  let checkedValueString = ""
+  if (checkedValue.length !== 0) {
+    checkedValueString = checkedValue.reduce((x, y) => x + ', ' + y)
+} else {
+  checkedValueString = "None"
+}
 
-  newItemsItem.textContent = `Items Required: ${ checkedValue } `
+  newItemsItem.textContent = `Items Required: ${ checkedValueString } `
 
   const newStudentItem = document.createElement('div');
   newStudentItem.setAttribute("id", "student-list-item")
